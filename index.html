@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    
+        <script src="https://kit.fontawesome.com/08a80e8404.js" crossorigin="anonymous"></script>
+    <title>Welcome to Akshay library</title>
+
+</head>
+
+<body>
+    <!-- <h1>Harry Potter library</h1> -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: sticky;
+    top: 0px;
+    z-index: 1;
+">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+                style="font-family: 'Dancing Script', cursive; font-size: 26px;   color: #1aff95;">Akshay library   </a>
+            <!-- <h1 class="navbar-brand">Magic Notes</h1> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input id="searchTxt" class="form-control me-2" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>   
+
+    <div id="message">
+      <!-- <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div> -->
+    </div>
+
+    <div class="container my-3" >
+        <h1>Add a Book</h1>
+        <hr>
+        <form id="libraryForm">
+            <div class="row mb-3">
+              <label for="bookName" class="col-sm-2 col-form-label">Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="bookName" placeholder="Book Name">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="Author" class="col-sm-2 col-form-label">Author</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="author" placeholder="Author">
+              </div>
+            </div>
+            <fieldset class="row mb-3">
+              <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="type" id="fiction" value="fiction" checked>
+                  <label class="form-check-label" for="fiction">
+                    Fiction
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="type" id="programming" value="programming">
+                  <label class="form-check-label" for="programming">
+                   Computer Programming
+                  </label>
+                </div>
+                <div class="form-check disabled">
+                  <input class="form-check-input" type="radio" name="type" id="cooking" value="cooking">
+                  <label class="form-check-label" for="cooking">
+                    Cooking
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <!-- <div class="row mb-3">
+              <div class="col-sm-10 offset-sm-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck1">
+                  <label class="form-check-label" for="gridCheck1">
+                    Example checkbox
+                  </label>
+                </div>
+              </div>
+            </div> -->
+            <button type="submit" class="btn btn-primary">Add Book</button>
+          </form>
+<hr>
+          <div id="table" style="margin-top: 15px;">
+              <h1>Your Books</h1>
+            <table class="table">
+                <thead>
+                  <tr >
+                    <!-- <th scope="col">#</th> -->
+                    <th scope="col">Name</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Delete</th>
+                  </tr>
+                </thead>
+                <tbody id = 'tableBody'>
+                  <!-- <tr>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr> -->
+                
+                </tbody>
+              </table>
+          </div>
+
+    </div>
+
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+              <!-- Facebook -->
+              <a class="btn btn-outline-light btn-floating m-1 " style="border-radius:50px;"
+                  href="https://www.facebook.com/akshay.thapper" role="button">
+                  <i class="fab fa-facebook-f "></i>
+                  <!-- <i class="fab fa-facebook-f"></i> -->
+
+              </a>
+
+              <!-- Twitter
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-twitter"></i
+          ></a> -->
+
+              <!-- Google
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-google"></i
+          ></a> -->
+
+              <!-- Instagram -->
+              <a class="btn btn-outline-light btn-floating m-1 " style="border-radius:50px;" href="https://instagram.com/akshaythapper/";
+                  role="button"><i class="fab fa-instagram"></i></a>
+
+              <!-- Linkedin -->
+              <a class="btn btn-outline-light btn-floating m-1 " style="border-radius:50px;" href="https://www.linkedin.com/in/akshay-thappar-261b6819a";
+                  role="button"><i class="fab fa-linkedin-in"></i></a>
+
+              <!-- Github -->
+              <a class="btn btn-outline-light btn-floating m-1" style="border-radius:50px;" href="https://github.com/akshaythappar" role="button"><i
+                      class="fab fa-github"></i></a>
+          </section>
+          <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2); font-family: Georgia, 'Times New Roman', Times, serif;">
+          © 2021 Copyright: Designed by Akshay Thappar
+          <!-- <a class="text-white" href="https://mdbootstrap.com/">Designed by Akshay Thappar</a> -->
+      </div>
+      <!-- Copyright -->
+  </footer>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+
+    <!-- <script src="index.js"></script> -->
+    <!-- <script src="indexES6.js"></script> -->
+    <script src="ES1.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+   
+</body>
+
+</html>
